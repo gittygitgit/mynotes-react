@@ -1,0 +1,39 @@
+How is css wired?
+react-virtualized is annotated with many different classnames
+
+
+How is styling accomplished?
+rv comes bundled with a default global stylesheet in /node_modules/react-virtualized/styles.css which can be imported raw to be applied globally across an app.
+You can import that to apply these defaults globally across the app.
+
+
+How do you enable importing styles sheets in a non-modular manner?
+update webpack config 
+module.exports = {
+  ...
+  resolve: {
+    extensions: [ '.js', '.jsx', '.css' ],
+    ...
+  },
+  module: {
+    rules: [
+      // App styles
+      {
+        test: /\.css$/,
+        include: [ path.join(__dirname, 'node_modules') ],
+        //exclude: [ path.join(__dirname, 'node_modules/react-virtualized') ],
+        use: [
+          { loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: false
+            }
+          }
+        ]
+      }
+      //
+}
+
+

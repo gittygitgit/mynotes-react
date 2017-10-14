@@ -1,0 +1,24 @@
+Difference between props and state
+
+State is needed as a triggering factor to getting new data / state into the system.
+
+Properties are injected in a top-down manner.
+
+	They are read-only data which represents a given state.
+
+State changes trigger re-renders
+
+during re-renders, new properties can be assigned to component properties
+
+
+
+
+State
+	mutable
+
+	private to the component and modified by calling setState
+
+	changes to state cause the component to re-render
+
+	render is written as a function of this.props and this.state
+

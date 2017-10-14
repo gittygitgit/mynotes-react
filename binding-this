@@ -1,0 +1,16 @@
+binding event handlers
+
+React component
+	
+	Class extends React.Component
+
+		It defines an onClick method
+
+		onClick() {
+			...
+		}
+
+		Why the need for this in ctor?
+			this.onClick = this.onClick.bind(this);
+
+

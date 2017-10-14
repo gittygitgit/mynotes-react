@@ -1,0 +1,20 @@
+
+
+Classes
+Render html
+
+
+Views
+JSX files
+Allow you to 
+
+
+Can you use core NodeJS libs?
+Not natively, however browserify will gather alternatives for many.
+
+Architecture
+In-memory representation of DOM
+Colocation of behavior and html
+
+Event system
+

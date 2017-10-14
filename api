@@ -1,0 +1,76 @@
+React
+
+express()
+	returns 
+
+createClass
+Creates a Component class given a specification
+
+Specification has a render property that returns something which will eventually resolve to html.
+
+Doesn’t necesarily include html.
+
+May contain jsx, html, or a mixture of both
+
+react knows how to differentiate between react jsx markup and pure html
+
+within createClass specification, this refers to the instance.
+
+
+createElement
+
+ReactDom
+Allows escape hatch out of react model
+
+ReactComponent render(
+  ReactElement element,
+  DOMElement container,
+  [function callback]
+)
+Renders a ReactElement into the DOM in the supplied container
+
+Controls the content of passed in container
+
+If dom already exists in container, react updates the element using react diffing algorithm.
+
+Returns a ref to the component, or null for stateless components
+
+
+Properties
+this.props.children
+
+Refers to all the children components.
+
+Component class
+render
+returns a single child
+child may have a child structure of any depth
+
+
+ReactElement
+May include markup content
+
+
+
+Concepts
+JSX Compiler
+Compiles JSX syntax into pure javascript
+Compiles html into ReactJS API calls
+
+Data
+Data may be passed to child 
+Child accesses data via data property (this.props)
+
+
+Terms
+Specification object
+JSON object containing properties expected by function it is passed to.
+
+Stateless component
+TODO
+w
+
+
+Reference
+https://facebook.github.io/react/docs/top-level-api.html
+

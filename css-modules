@@ -1,0 +1,32 @@
+What is a css-module?
+A module created by "importing" a css file
+representation of a css file as a javascript object.
+Converts a css file into a javascript object
+Makes a css file available to a javascript module by way of a javascript object.
+
+How are styles imported from a css file into a css module represented?
+As entries in a javascript object.
+The keys to the javascript object are in some cases rewritted from the original selector.
+Specifically, class selectors, e.g. .foo, are rewritten to an id specific to the module created.
+
+What is meant by css-modules enforcing local scope?
+When a css file is imported into a module, class selectors are rewritten such that the original class selector is mapped from a rewritten name in a way that's only known to the javascript module from where the css modules is being imported.
+Only class selectors are rewritten.
+
+
+Are styles imported by a parent component available to that component's childdren?
+TODO
+
+
+
+How do css modules treat different types of selectors differently?
+class selectors are rewritten 
+tag selectors are not
+
+Can styles defined in a css file be shared by multiple css modules?
+
+
+Terms / Concepts
+Locally scoped
+
+

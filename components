@@ -1,0 +1,35 @@
+React is built around the concept of components
+
+It’s one of just many UI solutions built around components.
+
+
+
+Pages are broken down into components
+
+A page is composed of components, with components in turn built on top of other components
+
+
+
+
+
+Component lifecycle
+	getInitialState
+		Invoked exactly once during the lifecycle of a component
+
+	componentDidMount
+		Invoked automatically after component has been rendered for first time
+
+
+	setState
+		should be invoked whenever component should be rerendered
+
+		Framework automatically rerenders components when this is called
+
+
+
+
+
+
+React.createClass
+
+

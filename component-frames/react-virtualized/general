@@ -1,0 +1,38 @@
+react-virtualized
+
+What???
+Virtualized component
+	A component provided by react-virtualized
+
+
+shallowCompare
+	Related to components which always render the same given the same inputs
+
+	relates to performing equality checks instead of deep comparison
+
+Pure component
+	Optimized Component which renders the same given the same props and state
+
+
+
+
+
+rowRenderer
+	react-sortable-hoc
+
+	row events are defined in a default RowRenderer function
+
+SortableContainer
+SortableElement
+
+react-sortable-hoc
+
+seatgeek/react-infinite
+	efficient scrolling container
+
+	intended to be similar to scrolling a list on a phone
+
+
+
+context api
+
